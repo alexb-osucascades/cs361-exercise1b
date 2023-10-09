@@ -2,25 +2,25 @@ class Bike
     # ...
   end
   
-  class RedBicycle < Bike
+  class RedBike < Bike
   
-    AMOUNT = 10
+    WEIGHT_TO_SUBTRACT_BY = 10
   
-    def initialize(a, b, c)
-      @height = a
-      @weight = b
-      @color = c
+    def initialize(height, weight, color)
+      @height = height
+      @weight = weight
+      @color = color
     end
   
     def getColor
       @color
     end
   
-    def retreive_height
+    def getHeight
       @height
     end
   
-    def change_weight
-      @weight -= AMOUNT
+    def subtractWeight
+      @weight -= WEIGHT_TO_SUBTRACT_BY
     end
   end
